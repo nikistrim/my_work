@@ -1,0 +1,283 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <!-- libs -->
+    <link rel="stylesheet" href="libs/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/fontawesome-pro-5.14.0-web/css/all.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<div class="wrapper">
+<header class="header d-flex flex-column page" id="header">
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="logo" href="index.html"><span>my</span> works</a>
+            <button class="navbar-toggler navbar__button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars navbar__burger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar__nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link navbar__link" href="history.html">история</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar__link" href="works.html">работы</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navbar__link" href="contact.html">контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main class="main">
+    <section class="works" id="works">
+        <div class="container works__container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <h2 class="section-title works__title">Работы</h2>
+                    <p class="works__text">
+                        Ниже представлены мои работы,с которыми вы можете ознакомиться и краткая информация.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs nav__tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav__link active" id="nike-tab" data-toggle="tab" href="#nike" role="tab"
+                    aria-controls="nike" aria-selected="true">nike</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav__link" id="silver-house-tab" data-toggle="tab" href="#silver-house"
+                    role="tab" aria-controls="silver-house" aria-selected="false">silver house</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav__link" id="orange-marketing-tab" data-toggle="tab" href="#orange-marketing"
+                    role="tab" aria-controls="orange-marketing" aria-selected="false">orange-marketing</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav__link" id="toshkent-tab" data-toggle="tab" href="#toshkent" role="tab"
+                    aria-controls="toshkent" aria-selected="false">toshkent</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav__link" id="street88-tab" data-toggle="tab" href="#street88" role="tab"
+                    aria-controls="street88" aria-selected="false">street88</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link nav__link" id="pizzeria-tab" data-toggle="tab" href="#pizzeria" role="tab"
+                    aria-controls="pizzeria" aria-selected="false">pizzeria</a>
+            </li>
+        </ul>
+
+        <div class="tab-content tabs" id="myTabContent">
+            <div class="tab-pane tabs__item fade show active" id="nike" role="tabpanel" aria-labelledby="nike-tab">
+                <div class="col-lg-6 tabs__col">
+                    <img class="tabs__image" src="img/nike.png" alt="">
+                </div>
+                <div class="col-lg-6 tabs__col">
+                    <div class="tabs__content">
+                        <div>
+                            <h3 class="tabs__title">Макет NIKE</h3>
+                            <p class="tabs__text">
+                                Компания, основанная 25 января 1964 года под названием Blue Ribbon Sports, официально стала Nike, Inc. в 1978 году. ... Nike также принадлежала Bauer Hockey (позже переименована в Nike Bauer) в период между 1995 и 2008 годами. Nike является спонсором многих спортсменов и спортивных команд по всему миру.
+                            </p>
+                        </div>
+                        <a class="tabs__button" href="#!">подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane tabs__item fade" id="silver-house" role="tabpanel"
+                aria-labelledby="silver-house-tab">
+                <div class="col-lg-6 tabs__col">
+                    <img class="tabs__image" src="img/silver-house.jpg" alt="">
+                </div>
+                <div class="col-lg-6 tabs__col">
+                    <div class="tabs__content">
+                        <div>
+                            <h3 class="tabs__title">Макет SILVER HOUSE</h3>
+                            <p class="tabs__text">
+                                Жилой комплекс Star House строится в Сергелийском районе застройщиком Univer Business House. Проектом предусмотрено возведение девятиэтажного здания в классическом итальянском стиле по монолитно-кирпичной технологии. Наружная отделка фасада будет в теплой цветовой гамме с использованием витражного и панорамного остекления. Помещения на первом этаже предназначены для бизнес-структур. Со второго по 9 этажи – жилые помещения с широкими балконами, с которых открываются прекрасные виды.
+                            </p>
+                        </div>
+                        <a class="tabs__button" href="#!">подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane tabs__item fade" id="orange-marketing" role="tabpanel"
+                aria-labelledby="orange-marketing-tab">
+                <div class="col-lg-6 tabs__col">
+                    <img class="tabs__image" src="img/orange-market.jpg" alt="">
+                </div>
+                <div class="col-lg-6 tabs__col">
+                    <div class="tabs__content">
+                        <div>
+                            <h3 class="tabs__title">Макет ORANGE MARKETING</h3>
+                            <p class="tabs__text">
+                                ОРГАНИЗАЦИЯ И ОФОРМЛЕНИЕ БИЗНЕС – КОНФЕРЕНЦИЙ, ФОРУМОВ, ПЛЕНАРНЫХ ЗАСЕДАНИЙ, ЦЕРЕМОНИЙ ОТКРЫТИЯ, КОРПОРАТИВНЫХ МЕРОПРИЯТИЙ НАЧИНАЯ ОТ ПРИГЛАШЕНИЯ И РЕГИСТРАЦИИ ГОСТЕЙ, НАПИСАНИЯ ПРОГРАММ ДО ФОТО И ВИДЕО ОТЧЕТОВ И ДР
+                            </p>
+                        </div>
+                        <a class="tabs__button" href="#!">подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane tabs__item fade" id="toshkent" role="tabpanel" aria-labelledby="toshkent-tab">
+                <div class="col-lg-6 tabs__col">
+                    <img class="tabs__image" src="img/toshkent.jpg" alt="">
+                </div>
+                <div class="col-lg-6 tabs__col">
+                    <div class="tabs__content">
+                        <div>
+                            <h3 class="tabs__title">Макет TOSHKENT</h3>
+                            <p class="tabs__text">
+                                Первые сухарики «Кириешки» появились в Новосибирске в сентябре 1999 года, когда Александр Ладан возглавил учрежденное совместно с однокурсниками предприятие «Сибирский берег».Тогда небольшой цех в пригороде Новосибирска, мог выпускать около 3 000 пакетиков сухариков в сутки.
+                            </p>
+                        </div>
+                        <a class="tabs__button" href="#!">подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane tabs__item fade" id="street88" role="tabpanel" aria-labelledby="street88-tab">
+                <div class="col-lg-6 tabs__col">
+                    <img class="tabs__image" src="img/burger.jpg" alt="">
+                </div>
+                <div class="col-lg-6 tabs__col">
+                    <div class="tabs__content">
+                        <div>
+                            <h3 class="tabs__title">Макет STREET88</h3>
+                            <p class="tabs__text">
+                                является одним из ведущих заведений в сфере быстрого питания. Начали свою деятельность в 28 августа 2015 году. Первый филиал был открыт в ТРК NEXT. На начальном этапе развития  меню не могло похвастаться большим изобилием, но  разнообразие всевозможных сэндвичей, которые на тот момент были основой меню, быстро смогли завоевать любовь гостей. Довольные результатом, но не намеренные останавливаться на достигнутом, мы продолжили совершенствоваться. Спустя всего пару месяцев, 25 октября 2015 года был открыт новый филиал в ТРЦ Samarqand Darvoza.
+                            </p>
+                        </div>
+                        <a class="tabs__button" href="#!">подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane tabs__item fade" id="pizzeria" role="tabpanel" aria-labelledby="pizzeria-tab">
+                <div class="col-lg-6 tabs__col">
+                    <img class="tabs__image" src="img/pizza.jpg" alt="">
+                </div>
+                <div class="col-lg-6 tabs__col">
+                    <div class="tabs__content">
+                        <div>
+                            <h3 class="tabs__title">Макет PIZZERIA</h3>
+                            <p class="tabs__text">
+                                Настоящая итальянская пиццерия в Ташкенте. Наша пиццерия основана в 2015 году. Начиная с даты открытия и по сей день, мы радуем наших гостей изысканной итальянской кухней. У нас вы попробуете вкуснейшую пиццу, которую наш шеф-повар готовит из настоящего тонкого теста по традиционным итальянским рецептам; пасту и множество других блюд итальянской кухни.
+                            </p>
+                        </div>
+                        <a class="tabs__button" href="#!">подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <h2 class="section-title info__title">Возможности</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card accordion__card">
+                            <div class="card-header accordion__card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link accordion__card-button" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <i class="fab fa-html5"></i> html5
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body accordion__card-body">
+                                    К основным возможностям, которые привнес с собой HTML5 в разработку веб-приложений и интерфейсов, относятся:
+                                    Новая улучшенная разметка документов ...Рисование на странице ...Новые элементы форм ...
+                                    Поддержка аудио и видео потоков ...Кроссплатформенная поддержка ...Обработка ошибок ...Геолокация
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion__card">
+                            <div class="card-header accordion__card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link accordion__card-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <i class="fab fa-css3-alt"></i> css3
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body accordion__card-body">
+                                    Спецификация CSS3 не является частью спецификации HTML5. Эти два стандарта были разработаны отдельно друг от друга, разными людьми, работающими в разное время в различных местах. Но даже организация W3C призывает веб-разработчиков использовать HTML5 и CSS3 вместе, как часть одной новой волны современного веб-дизайна.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card accordion__card">
+                            <div class="card-header accordion__card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link accordion__card-button collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <i class="fab fa-bootstrap"></i> bootstrap4
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body accordion__card-body">
+                                    Bootstrap 4 — это последняя версия широко распространенного фреймворка для front-end разработчиков Bootstrap.
+
+                                    В Bootstrap 4 есть много новых интересных функций и возможностей, которые упрощают процесс работы над проектом. Самым важным обновлением является интеграция с Flexbox.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a class="logo" href="#header"><span>my</span> works</a>
+
+            <ul class="footer__nav">
+                <li><a class="footer__link" href="#story">История</a></li>
+                <li><a class="footer__link" href="#works">Работы</a></li>
+                <li><a class="footer__link" href="#!">Контакты</a></li>
+            </ul>
+
+            <ul class="footer__contacts">
+                <li><a class="footer__tel" href="tel:+998901234567">+998 90 123 45 67</a></li>
+                <li><a class="footer__email" href="mailto:mymail@mail.my">mymail@mail.my</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+    <!-- JavaScripts -->
+    <script src="{% static 'libs/jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'libs/popper.min.js' %}"></script>
+    <script src="{% static 'libs/bootstrap-4.5.0-dist/js/bootstrap.min.js'%}"></script>
+</html>

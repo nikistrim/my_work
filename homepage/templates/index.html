@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <!-- libs -->
+    <link rel="stylesheet" href="{% static 'libs/bootstrap-4.5.0-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/fontawesome-pro-5.14.0-web/css/all.min.css' %}">
+    <!-- styles -->
+    <link rel="stylesheet" href="{% static 'css/fonts.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/media.css'%}">
+</head>
+
+<body>
+    <div class="wrapper">
+    <header class="header d-flex flex-column" id="header">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="logo" href="{% url 'index:index' %}"><span>my</span> works</a>
+                <button class="navbar-toggler navbar__button" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-bars navbar__burger"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar__nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link navbar__link" href="{% url 'history:history' %}">история</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar__link" href="works.html">работы</a>
+
+
+                        </li><a class="nav-link navbar__link" href="contact.html">контакты</a>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header__content d-flex align-items-center flex-grow-1">
+            <div class="container">
+                <h1 class="header__title">моё портфолио</h1>
+                <p class="header__subtitle">
+
+                </p>
+            </div>
+        </div>
+
+    </header>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a class="logo" href="#header"><span>my</span> works</a>
+
+            <ul class="footer__nav">
+                <li><a class="footer__link" href="#story">История</a></li>
+                <li><a class="footer__link" href="#works">Работы</a></li>
+                <li><a class="footer__link" href="#!">Контакты</a></li>
+            </ul>
+
+            <ul class="footer__contacts">
+                <li><a class="footer__tel" href="tel:+998901234567">+998 90 123 45 67</a></li>
+                <li><a class="footer__email" href="mailto:mymail@mail.my">mymail@mail.my</a></li>
+            </ul>
+        </div>
+    </footer>
+    </div   >
+
+
+
+
+
+    <!-- JavaScripts -->
+    <script src="{% static 'libs/jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'libs/popper.min.js' %}"></script>
+    <script src="{% static 'libs/bootstrap-4.5.0-dist/js/bootstrap.min.js'%}"></script>
+</body>
+
+</html>

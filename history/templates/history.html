@@ -1,0 +1,155 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <!-- libs -->
+    <link rel="stylesheet" href="{% static 'libs/bootstrap-4.5.0-dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/fontawesome-pro-5.14.0-web/css/all.min.css' %}">
+    <!-- styles -->
+    <link rel="stylesheet" href="{% static 'css/fonts.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/media.css'%}">
+</head>
+<div class="wrapper">
+<header class="header d-flex flex-column page" id="header">
+    <nav class="navbar navbar-expand-md">
+        <div class="container">
+            <a class="logo" href="{% url 'index:index' %}"><span>my</span> works</a>
+            <button class="navbar-toggler navbar__button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars navbar__burger"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar__nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link navbar__link" href="{% url 'history:history' %}">история</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar__link" href="works.html">работы</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navbar__link" href="contact.html">контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main class="main">
+        <section class="story" id="story">
+            <div class="container story__container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <h2 class="story__title section-title">история</h2>
+                        <p class="story__text">
+                            Я с детсва увлекалась программированием и я решила пойти в учебный центр. Так и начался мой путь. Ниже можете подробнее ознакомиться с учебным центром.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+                <div class="container carousel__container">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-lg-4">
+                                    <img class="carousel-item__image" src="{% static 'img/study.png'%}" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="carousel-item__title">обучение в <span>PROWEB</span></h3>
+                                    <p class="carousel-item__text">
+                                        Хотите стать успешными программистами, работать над интересными и очень выгодными проектами?
+
+                                        Наш курс ВЕБ ПРОГРАММИРОВАНИЕ создан специально для вас! Вас ждет одна из самых востребованных профессий всего за 9 месяцев.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-lg-4">
+                                    <img class="carousel-item__image" src="{% static 'img/study.png' %}" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="carousel-item__title">обучение в <span>PROWEB</span></h3>
+                                    <p class="carousel-item__text">
+                                        ​хотите за короткий срок освоить современную и творческую профессию дизайнера или повысить свой текущий уровень?
+
+Тогда записывайтесь на курс PRO DESIGN и всего за 6 месяцев вы освоите необходимые инструменты для создания любого дизайн-проекта!
+
+Программа курса разрабатывалась практикующими дизайнерами с многолетним стажем и включила в себя все самые популярные тренды 2022 года
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-lg-4">
+                                    <img class="carousel-item__image" src="{% static 'img/study.png' %}" alt="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h3 class="carousel-item__title">обучение в <span>PROWEB</span></h3>
+                                    <p class="carousel-item__text">
+                                        Всего за 5 месяцев обучения вы подробно изучите программы 3Ds Max и AutoCAD, освоите инструменты качественной 3D-визуализации и моделирования, а также получите все необходимые навыки, для того чтобы стать профессиональным 3D-специалистом!
+
+                                        Курс рассчитан на новичков и людей, которые хотят получить билет в такие профессии, как архитектор интерьеров и экстерьеров, 3D-моделлер и визуализатор для рекламных агентств, продакшн-студий и компаний, создающих игры.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev carousel__button" href="#carouselExampleControls" role="button"
+                        data-slide="prev">
+                        <i class="fad fa-chevron-left carousel__icon"></i>
+                    </a>
+                    <a class="carousel-control-next carousel__button" href="#carouselExampleControls" role="button"
+                        data-slide="next">
+                        <i class="fad fa-chevron-right carousel__icon"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <a class="logo" href="#header"><span>my</span> works</a>
+
+            <ul class="footer__nav">
+                <li><a class="footer__link" href="#story">История</a></li>
+                <li><a class="footer__link" href="#works">Работы</a></li>
+                <li><a class="footer__link" href="#!">Контакты</a></li>
+            </ul>
+
+            <ul class="footer__contacts">
+                <li><a class="footer__tel" href="tel:+998901234567">+998 90 123 45 67</a></li>
+                <li><a class="footer__email" href="mailto:mymail@mail.my">mymail@mail.my</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+    <!-- JavaScripts -->
+    <script src="{% static 'libs/jquery-3.5.1.slim.min.js' %}"></script>
+    <script src="{% static 'libs/popper.min.js' %}"></script>
+    <script src="{% static 'libs/bootstrap-4.5.0-dist/js/bootstrap.min.js'%}"></script>
+</html>

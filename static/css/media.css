@@ -1,0 +1,124 @@
+@media (max-width: 1199.5px) {
+    .carousel-item__text {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 991.5px) {
+    .header__title {
+        margin-bottom: 30px;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+    }
+
+    .carousel-item__image {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .carousel__button {
+        display: none;
+    }
+
+    .carousel-item__title {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .tabs__item {
+        height: auto;
+    }
+
+    .tabs__image {
+        max-width: 600px;
+        max-height: 300px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .tabs__col {
+        text-align: center;
+    }
+
+    .tabs__content {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .tabs__button {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767.5px) {
+    .header__title {
+        font-size: 50px;
+    }
+
+    .navbar__nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .story__container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .carousel-item__image {
+        height: 220px;
+    }
+
+    .works__container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 575.5px) {
+    .header__title {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .header__subtitle {
+        font-size: 16px;
+    }
+
+    .navbar__nav {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar__link {
+        margin: 0;
+        text-align: right;
+    }
+
+    .carousel-item__title {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .accordion__card-body {
+        font-size: 16px;
+    }
+
+    .story__text,
+    .works__text {
+        font-size: 16px;
+    }
+
+    .footer__nav {
+        margin: 25px 0;
+    }
+}
